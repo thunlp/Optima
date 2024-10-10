@@ -10,6 +10,8 @@
 
 **Optima** is a novel training framework designed to optimize LLM-based multi-agent systems. By leveraging iterative training, Optima significantly enhances agent communication efficiency while boosting response accuracy. Our approach not only reduces token usage but also paves the way for improved inference-time scaling laws.
 
+![overview](imgs/overview.png)
+
 ## 🚀 Key Features
 
 - Significant reduction in token usage
