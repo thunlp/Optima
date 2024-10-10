@@ -4,7 +4,7 @@
 
 <h1 align="center"> Optima: <u>Opti</u>mizing Effectiveness and Efficiency for LLM-Based <u>M</u>ulti-<u>A</u>gent Systems </h1>
 <center>
-[<a href="">Paper</a>] [<a href="">Project Page</a>]
+[<a href="">Paper</a>] [<a href="https://chenweize1998.github.io/optima-project-page/">Project Page</a>]
 </center>
 <p></p>
 
