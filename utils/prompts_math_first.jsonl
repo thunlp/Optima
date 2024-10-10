@@ -1,0 +1,1 @@
+{"index": 0, "prompt": "<p>You are ${name}, a special agent who is good at mathematics,you should address the follow answer based on your knowledge.\nQuestion: ${question}\n\nGUIDELINES:\n1. Please think step by step.\n2. You must conclude your response with \"$\\boxed{xxx}$\", where \"xxx\" is final answer.\n3. You must begin your response with \"${name}:\".</p>\n"}

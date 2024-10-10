@@ -1,0 +1,36 @@
+model_name_or_path: /home/test/testdata/models/Meta-Llama-3-8B-Instruct
+model_revision: main
+tokenizer_name_or_path: /home/test/testdata/models/Meta-Llama-3-8B-Instruct # Custom tokenizer with <|im_start|> and <|im_end|> tokens
+torch_dtype: bfloat16
+use_flash_attention_2: true
+dataset_mixer:
+  /home/test/test04/yuanjiarui/project/src/dpo_3k_v1: 1.0
+dataset_splits:
+- train
+- test
+preprocessing_num_workers: 8
+bf16: true
+beta: 0.7
+do_eval: true
+evaluation_strategy: steps
+eval_steps: 100
+gradient_accumulation_steps: 8
+gradient_checkpointing: true
+gradient_checkpointing_kwargs:
+  use_reentrant: false
+learning_rate: 5.0e-7
+log_level: info
+logging_steps: 10
+lr_scheduler_type: cosine
+max_length: 512
+max_prompt_length: 1024
+num_train_epochs: 1
+optim: adamw_torch
+output_dir: /home/test/test04/yuanjiarui/project/checkpoints/dpo_llama_8b_3k_v1
+per_device_train_batch_size: 1
+per_device_eval_batch_size: 1
+# report_to:
+# - wandb
+save_strategy: "no"
+seed: 42
+warmup_ratio: 0.1

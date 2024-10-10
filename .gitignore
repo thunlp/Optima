@@ -1,0 +1,16 @@
+results/*
+__pycache__/
+output/*
+*.whl
+my_datasets/*
+others/*
+!my_datasets/.gitkeep
+!results/.gitkeep
+inference_results/*
+!inference_results/.gitkeep
+*.jsonl
+!utils/*.jsonl
+*.tgz
+.vscode
+.cache
+checkpoints/*

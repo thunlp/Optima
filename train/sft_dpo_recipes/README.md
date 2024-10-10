@@ -1,0 +1,28 @@
+- **initial_model_path**: Path to the initial model 
+- **initial_dataset_path**: not used  
+- **dataset_type**: Type of dataset  
+- **mid_yaml_root_path**: Path for storing YAML files required during the - **iteration process 
+- **check_point_root_path**: Path for storing checkpoints  
+- **iteration_times**: Number of iterations 
+- **port**: The first port number for model deployment (8 consecutive ports - **starting from this one will be used)  
+- **devices**: Device for the first port number deployment 
+- **tokenizer_first_path**: Path for the tokenizer of the first agent 
+- **tokenizer_second_path**: Path for the tokenizer of the second agent  
+- **explore_count**: Number of exploration attempts for each task  
+- **thread_count**: Number of threads  
+- **prompt_pool_path**: Path to the prompt pool  
+- **origin_sft_yaml_path**: Path to the initial YAML file for SFT 
+- **mid_sft_jsonl_root_path**: Path for storing SFT inference results in JSONL - **format 
+- **mid_sft_dataset_root_path**: Path for storing Huggingface datasets - **generated during the SFT iteration process  
+- **initial_episilon**: Threshold used during the construction of SFT - **(Supervised Fine-Tuning) data
+- **sample_count**: Number of tasks in sft stage 
+- **origin_dpo_yaml_path**: Path to the initial YAML file for DPO 
+- **mid_dpo_jsonl_root_path**: Path for storing DPO inference results in JSONL - **format 
+- **mid_dpo_dataset_root_path**: Path for storing Huggingface datasets - **generated during the DPO iteration process  
+- **initial_dpo_min_value**: Threshold for the reward difference between - **chosen and rejected pairs  
+- **initial_dpo_episilon**: Reward threshold used when selecting data in DPO - **stage 
+- **monte_sample_count**: Number of tasks in dpo stage 
+- **cal_ppl**: Whether to calculate perplexity (PPL) 
+- **lambda1**: Coefficient for the token score 
+- **lambda2**: Coefficient for the PPL score 
+- **from_initial**: Whether to start training from the initial model in each - **iteration 

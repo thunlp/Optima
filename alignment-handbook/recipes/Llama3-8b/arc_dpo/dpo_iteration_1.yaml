@@ -1,0 +1,34 @@
+beta: 0.2
+bf16: true
+dataset_mixer:
+  ../my_datasets/arc_dpo/iteration_1: 1.0
+dataset_splits:
+- train
+- test
+do_eval: true
+eval_steps: 100
+evaluation_strategy: steps
+gradient_accumulation_steps: 8
+gradient_checkpointing: true
+gradient_checkpointing_kwargs:
+  use_reentrant: false
+learning_rate: 5.0e-07
+log_level: info
+logging_steps: 10
+lr_scheduler_type: cosine
+max_length: 4096
+max_prompt_length: 1024
+model_name_or_path: ../checkpoints/arc_dpo/dpo_iteration_0
+model_revision: main
+num_train_epochs: 1
+optim: adamw_torch
+output_dir: ../checkpoints/arc_dpo/dpo_iteration_1
+per_device_eval_batch_size: 1
+per_device_train_batch_size: 1
+preprocessing_num_workers: 8
+save_strategy: 'no'
+seed: 42
+tokenizer_name_or_path: /home/test/testdata/models/Meta-Llama-3-8B-Instruct
+torch_dtype: bfloat16
+use_flash_attention_2: true
+warmup_ratio: 0.1

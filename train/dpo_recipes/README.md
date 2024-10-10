@@ -1,0 +1,25 @@
+- **initial_model_path**: Path to the initial model
+- **initial_dataset_path**: Not used
+- **dataset_type**: Type of dataset
+- **mid_yaml_root_path**: Path for storing YAML files required during the - **iteration process
+- **check_point_root_path**: Path for storing checkpoints
+- **iteration_times**: Number of iterations
+- **port**: The first port number for model deployment (8 consecutive ports - **starting from this one will be used)
+- **devices**: Device for the first port number deployment
+- **tokenizer_first_path**: Path for the tokenizer of the first agent
+- **tokenizer_second_path**: Path for the tokenizer of the second agent
+- **explore_count**: Number of exploration attempts for each task
+- **thread_count**: Number of threads
+- **prompt_pool_path**: Not used
+- **initial_episilon**: Not used
+- **sample_count**: Not used
+- **origin_dpo_yaml_path**: Path to the initial YAML file used for training, - **defining hyperparameters for training
+- **mid_dpo_jsonl_root_path**: Path for storing inference results in JSONL - **format during the iteration process
+- **mid_dpo_dataset_root_path**: Path for storing Huggingface datasets - **generated during the iteration process
+- **initial_dpo_min_value**: Threshold for the reward difference between - **chosen and rejected pairs
+- **initial_dpo_episilon**: Reward threshold used when selecting data
+- **monte_sample_count**: Number of tasks
+- **cal_ppl**: Whether to calculate perplexity (PPL)
+- **from_initial**: Whether to start training from the initial model in each - **iteration
+- **lambda1**: Coefficient for the token score
+- **lambda2**: Coefficient for the PPL score
