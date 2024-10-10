@@ -3,10 +3,10 @@
 </p>
 
 <h1 align="center"> Optima: <u>Opti</u>mizing Effectiveness and Efficiency for LLM-Based <u>M</u>ulti-<u>A</u>gent Systems </h1>
-<center>
-[<a href="">Paper</a>] [<a href="https://chenweize1998.github.io/optima-project-page/">Project Page</a>]
-</center>
-<p></p>
+<p align="center">
+  [<a href="">Paper</a>] |
+  [<a href="https://chenweize1998.github.io/optima-project-page/">Project Page</a>]
+</p>
 
 **Optima** is a novel training framework designed to optimize LLM-based multi-agent systems. By leveraging iterative training, Optima significantly enhances agent communication efficiency while boosting response accuracy. Our approach not only reduces token usage but also paves the way for improved inference-time scaling laws.
 
