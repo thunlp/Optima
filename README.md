@@ -134,4 +134,11 @@ python multi_sc_data_generate_script.py \
 ```
 
 ## ✍️ Citation
-TODO
+```bibtex
+@article{chen2024optima,
+  title={Optima: Optimizing Effectiveness and Efficiency for LLM-Based Multi-Agent System},
+  author={Chen, Weize and Yuan, Jiarui and Qian, Chen and Yang, Cheng and Liu, Zhiyuan and Sun, Maosong},
+  journal={arXiv preprint arXiv:2410.08115},
+  year={2024}
+}
+```
