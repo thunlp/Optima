@@ -11,7 +11,16 @@ import datasets
 from tqdm import tqdm
 import re
 import os
-
+from utils.config import (
+    hotpot_qa_path,
+    mwh_qa_path,
+    trivia_qa_path,
+    cbt_path,
+    math_path,
+    gsm8k_math,
+    arc_path,
+    mmlu_path
+)
 split_map = {
     "train": {
         "hotpot_qa": "train",
@@ -45,7 +54,7 @@ class BaseDataloader:
 class DataloaderForHotpotQA(BaseDataloader):
 
     def __init__(
-        self, dataset: str = "hotpot_qa", name: str = "distractor", split: str = "train"
+        self, dataset: str = hotpot_qa_path, name: str = "distractor", split: str = "train"
     ):
         self.dataset = dataset
         self.name = name
@@ -105,7 +114,7 @@ class DataloaderForHotpotQA(BaseDataloader):
 class DataloaderForMWHQA(BaseDataloader):
     def __init__(
         self,
-        dataset_path: str = "/home/test/test04/yuanjiarui/project/json_dataset/2MultiWikiQA",
+        dataset_path: str = mwh_qa_path,
         name: str = "",
         split: str = "train",
     ):
@@ -153,7 +162,7 @@ class DataloaderForMWHQA(BaseDataloader):
 class DataloaderForTrivalQA(BaseDataloader):
     def __init__(
         self,
-        dataset: str = "/home/test/test04/yuanjiarui/project/huggingface_cache/trivia_qa_dataset",
+        dataset: str = trivia_qa_path,
         name: str = "rc",
         split: str = "train",
     ):
@@ -194,7 +203,7 @@ class DataloaderForTrivalQA(BaseDataloader):
 class DataloaderForCBT(BaseDataloader):
     def __init__(
         self,
-        dataset: str = "/home/test/test04/yuanjiarui/project/huggingface_cache/cbt_dataset",
+        dataset: str = cbt_path,
         name: str = "CN",
         split: str = "train",
     ):
@@ -230,7 +239,7 @@ class DataloaderForCBT(BaseDataloader):
 class DataloaderForGSM8K(BaseDataloader):
     def __init__(
         self,
-        dataset: str = "/home/test/test04/yuanjiarui/project/huggingface_cache/gsm8k_dataset",
+        dataset: str = gsm8k_math,
         name: str = "main",
         split: str = "train",
     ):
@@ -263,7 +272,7 @@ class DataloaderForGSM8K(BaseDataloader):
 class DataloaderForMATH(BaseDataloader):
     def __init__(
         self,
-        dataset: str = "/home/test/test04/yuanjiarui/project/json_dataset/MATH",
+        dataset: str = math_path,
         split="train",
     ):
         self.split = split
@@ -325,7 +334,7 @@ class DataloaderForMATH(BaseDataloader):
 class DataloaderForARC(BaseDataloader):
     def __init__(
         self,
-        dataset: str = "/home/test/test04/yuanjiarui/project/huggingface_cache/arc_dataset",
+        dataset: str = arc_path,
         name: str = "ARC-Challenge",
         split: str = "train",
     ):
@@ -366,7 +375,7 @@ class DataloaderForARC(BaseDataloader):
 class DataloaderForMMLU(BaseDataloader):
     def __init__(
         self,
-        dataset: str = "/home/test/test04/yuanjiarui/project/huggingface_cache/mmlu_dataset",
+        dataset: str = mmlu_path,
         name: str = "all",
         split: str = "auxiliary_train",
     ):

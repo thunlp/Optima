@@ -19,9 +19,9 @@ sample_count: 0
 origin_dpo_yaml_path: ./alignment-handbook/recipes/Llama3-8b/arc_dpo/base.yaml
 mid_dpo_jsonl_root_path: ./results/arc_dpo
 mid_dpo_dataset_root_path: ./my_datasets/arc_dpo
-initial_dpo_min_value: 0
-initial_dpo_episilon: -100
-monte_sample_count: 10
+initial_dpo_min_value: 0.2
+initial_dpo_episilon: 0.45
+monte_sample_count: 10000
 cal_ppl: 1
 from_initial: False
 lambda1: -0.4
