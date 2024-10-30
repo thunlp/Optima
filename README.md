@@ -27,6 +27,7 @@ Optima requires two conda environments: one for vLLM deployment and another for 
 
 ```bash
 conda create -n optima-vllm python=3.11
+conda activate optima-vllm
 # Install NVCC for CUDA
 conda install nvidia/label/cuda-12.1.0::cuda-nvcc
 # Install PyTorch 2.3.1 (required by VLLM==0.5.3)
@@ -39,6 +40,7 @@ pip install vllm==0.5.3
 
 ```bash
 conda create -n optima-train python=3.11
+conda activate optima-train
 # Install NVCC for CUDA
 conda install nvidia/label/cuda-12.1.0::cuda-nvcc
 # Install PyTorch 2.3.1 (required by VLLM==0.5.3)
