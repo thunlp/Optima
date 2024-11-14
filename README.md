@@ -50,6 +50,7 @@ cd alignment-handbook
 pip install -e .
 # Install Dependencies
 pip install flash-attn --no-build-isolation
+cd ../
 pip install -r requirements.txt
 ```
 
